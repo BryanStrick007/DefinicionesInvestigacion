@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Investigación</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"></link>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <marquee>
+                <h1>Investigación</h1>
+            </marquee>
+                <div class="row" >
+                    <div class="col-5" align="center">
+                        <h:outputText value="" />
+                        <h:graphicImage value="#{investigacionBean.investigacion.foto}" alt="Foto de Investigación" style="width: 150px;"/>
+                    </div>
+                    <div class="col-5" align="center" >
+                        <h:outputText value="Título: " />
+                        <h:outputText value="#{investigacionBean.investigacion.titulo}" />
+                        <br></br>
+                        <p class="text-justify">
+                            <h:outputText value="Descripción: " />
+                        <h:outputText value="#{investigacionBean.investigacion.descripcion}" />
+                        </p>
+                        <h:outputText value="Referencia: " />
+                        <h:outputText value="#{investigacionBean.investigacion.referencia}" />
+                    </div>
+                </div>
+        </div>
+    </h:body>
+</html>
+
